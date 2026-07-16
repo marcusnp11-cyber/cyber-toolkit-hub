@@ -1,69 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Marcus Cyber Toolkit Hub</title>
-<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Marcus Cyber Toolkit Hub — a curated collection of open-source cybersecurity tools, OSINT resources, and documentation for learning and research.">
+    <title>Marcus Cyber Toolkit Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
-
 
 <body>
 
-<section class="hero">
+<header class="hero">
     <div class="hero-content">
-
-        <span class="hero-badge">
-            OPEN SOURCE CYBERSECURITY RESOURCES
-        </span>
-
-        <h1>Cyber Toolkit Hub</h1>
-
+        <span class="hero-badge">OPEN SOURCE CYBERSECURITY RESOURCES</span>
+        <h1>Marcus Cyber Toolkit Hub</h1>
         <p>
-            Explore cybersecurity tools, OSINT resources,
-            web security platforms, network security tools,
-            cloud resources, and learning environments.
+            Open-source and community cybersecurity resources for learning,
+            research, network discovery, web application testing, security
+            validation, and OSINT investigations.
         </p>
+    </div>
+</header>
 
-        <div class="hero-buttons">
+<div class="banner">Search cybersecurity tools, frameworks, and documentation resources.</div>
 
-            #toolGrid-primary">
-                Explore Tools
-            </a>
+<main>
+    <div class="search-container">
+        <input
+            type="text"
+            id="searchInput"
+            class="search-box"
+            placeholder="Search tools..."
+            aria-label="Search tools"
+            onkeyup="filterTools()"
+        >
+    </div>
 
-            #resources
+    <h2 class="section-title">Cybersecurity Tools</h2>
 
+    <div class="grid" id="toolGrid">
+
+        <div class="card tool">
+            <span class="category">Web Security</span>
+            <h3>Burp Suite Community Edition</h3>
+            <p>
+                Free edition of Burp Suite that provides an intercepting proxy,
+                request modification, repeater functionality, traffic inspection,
+                and web application security testing workflows.
+            </p>
+
+            <div class="links">
+                <a class="btn" href="https://portswigger.net/burp/communitydownload" target="_blank" rel="noopener noreferrer">Official Site</a>
+                <a class="btn github" href="https://github.com/PortSwigger" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+        </div>
+
+        <div class="card tool">
+            <span class="category">Network Discovery</span>
+            <h3>Nmap</h3>
+            <p>
+                Network mapper used for host discovery, service detection,
+                inventory management, and network visibility.
+            </p>
+
+            <div class="links">
+                <a class="btn" href="https://nmap.org/" target="_blank" rel="noopener noreferrer">Official Site</a>
+                <a class="btn github" href="https://github.com/nmap/nmap" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+        </div>
+
+        <div class="card tool">
+            <span class="category">Operating System</span>
+            <h3>Kali Linux Documentation</h3>
+            <p>
+                Official documentation covering installation,
+                configuration, tool usage, and security workflows
+                within Kali Linux.
+            </p>
+
+            <div class="links">
+                <a class="btn" href="https://www.kali.org/docs/" target="_blank" rel="noopener noreferrer">Documentation</a>
+                <a class="btn github" href="https://gitlab.com/kalilinux" target="_blank" rel="noopener noreferrer">Source Repositories</a>
+            </div>
+        </div>
+
+        <div class="card tool">
+            <span class="category">Security Framework</span>
+            <h3>Metasploit Framework</h3>
+            <p>
+                Open-source security validation framework used by
+                defenders and researchers to assess security controls
+                and test environments they are authorized to evaluate.
+            </p>
+
+            <div class="links">
+                <a class="btn" href="https://www.kali.org/tools/metasploit-framework/" target="_blank" rel="noopener noreferrer">Official Page</a>
+                <a class="btn github" href="https://github.com/rapid7/metasploit-framework" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+        </div>
+
+        <div class="card tool">
+            <span class="category">OSINT</span>
+            <h3>OSINT Framework</h3>
+            <p>
+                Directory of publicly available intelligence resources
+                that helps investigators discover relevant open-source
+                information tools and research methods.
+            </p>
+
+            <div class="links">
+                <a class="btn" href="https://osintframework.com/" target="_blank" rel="noopener noreferrer">Framework</a>
+                <a class="btn github" href="https://github.com/lockfale/OSINT-Framework" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+        </div>
+
+        <div class="card tool">
+            <span class="category">Resources</span>
+            <h3>GitHub Security Repositories</h3>
+            <p>
+                Explore open-source cybersecurity projects,
+                detection engineering tools, educational content,
+                and security automation resources.
+            </p>
+
+            <div class="links">
+                <a class="btn" href="https://github.com/topics/cybersecurity" target="_blank" rel="noopener noreferrer">Browse Repositories</a>
+            </div>
         </div>
 
     </div>
-</section>
+</main>
 
-<section class="hero">
-    <div class="hero-content">
+<footer>
+    © 2026 Marcus Cyber Toolkit Hub • Powered by GitHub Pages
+</footer>
 
-        <span class="hero-badge">
-            OPEN SOURCE CYBERSECURITY RESOURCES
-        </span>
+<script src="js/script.js"></script>
 
-        <h1>Cyber Toolkit Hub</h1>
-
-        <p>
-            Explore cybersecurity tools, OSINT resources,
-            web security platforms, network security tools,
-            cloud resources, and learning environments.
-        </p>
-
-        <div class="hero-buttons">
-            #tools class="btn-primary">
-                Explore Tools
-            </a>
-
-            #resources
-                Resources
-            </a>
-        </div>
-
-    </div>
-</section>
+</body>
 </html>
