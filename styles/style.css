@@ -136,4 +136,64 @@ footer{
     text-align:center;
     background:#031b10;
     color:#00ff88;
+}.hero{
+    min-height:70vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:2rem;
+
+    background:
+    radial-gradient(circle at center,
+    rgba(0,255,136,.15),
+    transparent 60%);
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.hero-badge{
+    color:#00ff88;
+    border:1px solid #00ff88;
+    padding:10px 20px;
+    border-radius:25px;
+    display:inline-block;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:4rem;
+    color:#00ff88;
+    text-shadow:0 0 20px #00ff88;
+}
+
+.hero p{
+    color:#d0d0d0;
+    font-size:1.2rem;
+    margin:20px 0;
+}
+
+.hero-buttons{
+    margin-top:30px;
+}
+
+.btn-primary,
+.btn-secondary{
+    text-decoration:none;
+    padding:12px 24px;
+    border-radius:8px;
+    margin:5px;
+    display:inline-block;
+}
+
+.btn-primary{
+    background:#00ff88;
+    color:#000;
+}
+
+.btn-secondary{
+    border:1px solid #00ff88;
+    color:#00ff88;
 }
